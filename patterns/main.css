@@ -1,3 +1,24 @@
 @import url("0-600.css");
 @import url("600-800.css");
 @import url("800+.css");
+
+@media (min-width: 0px) and (max-width: 599.9px) {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(63,63) }}); }
+}
+@media (min-width: 0px) and (max-width: 599.9px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 0px) and (max-width: 599.9px) and (min-resolution: 192dppx), {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(126,126) }}); }
+}
+@media (min-width: 600px) and (max-width: 799.9px) {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(168,112) }}); }
+}
+@media (min-width: 600px) and (max-width: 799.9px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 600px) and (max-width: 799.9px) and (min-resolution: 192dppx) {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(336,224) }}); }
+}
+@media (min-width: 800px) {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(145,98) }}); }
+}
+@media (min-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 800px) and (min-resolution: 192dppx) {
+    .bg-{{ loop.index }} { background-image: url({{ item.img.url | getRenditionUrl(290,196) }}); }
+}
