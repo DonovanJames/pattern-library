@@ -1,0 +1,248 @@
+.newsfeed {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 61.2rem;
+}
+
+.newsfeed h2 span,
+.newsfeed .sponsored {
+  display: none;
+}
+
+.newsfeed div > article:first-child {
+  text-align: center;
+}
+
+.newsfeed article {
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  padding: 4rem 0;
+  position: relative;
+  width: 100%;
+}
+.newsfeed > article:first-of-type {
+	padding-top: 0;
+}
+.newsfeed article:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.newsfeed a {
+  color: #f85d00;
+  text-decoration: none;
+}
+.newsfeed a:hover,
+.newsfeed a:active {
+  color: #333;
+  text-decoration: underline;
+}
+.newsfeed a:active {
+  color: #f85d00;
+}
+
+.newsfeed a.square,
+.newsfeed a.thumb,
+.newsfeed a.horizontal,
+.newsfeed a.large-horizontal {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.newsfeed a.square,
+.newsfeed a.thumb {
+  float: left;
+  height: 16.8rem;
+  margin-right: 2rem;
+  position: relative;
+  width: 16.8rem;
+}
+.newsfeed a.thumb {
+  height: 11.2rem;
+}
+.newsfeed a.horizontal,
+.newsfeed a.large-horizontal {
+  display: block;
+  height: 41rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.newsfeed a.infographic:after,
+.newsfeed a.video:after {
+  background-color: #fa7802;
+  background: rgba(248, 93, 0, .85) url(http://placekitten.com/20) center center no-repeat;
+  border-radius: .3rem;
+  bottom: .9rem;
+  content: '';
+  height: 4.2rem;
+  left: .9rem;
+  padding: 1.1rem;
+  position: absolute;
+  width: 4.2rem;
+}
+.newsfeed a.video:after {
+  background-image: url(http://placehold.it/20);
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dppx) {
+  .newsfeed a.infographic:after {
+    background-image: url(http://placekitten.com/40);
+    background-size: 2rem;
+  }
+  .newsfeed a.video:after {
+    background-image: url(http://placehold.it/40);
+    background-size: 2rem;
+  }
+}
+
+.newsfeed time,
+.newsfeed time + span,
+.newsfeed .livefyre-commentcount {
+  color: #555;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.newsfeed .livefyre-commentcount {
+  font-weight: 700;
+}
+.newsfeed .livefyre-commentcount:hover {
+  text-decoration: none;
+}
+.newsfeed time + span {
+  text-transform: uppercase;
+}
+.newsfeed time + span + a:not(.livefyre-commentcount):before,
+.newsfeed time + a:not(.livefyre-commentcount):before,
+.newsfeed .livefyre-commentcount + a:before,
+.newsfeed .thumb p:after {
+  content: '\000A';
+  display: block;
+  font-size: 1rem;
+  line-height: .5;
+  white-space: pre;
+}
+.newsfeed .thumb p:after {
+  line-height: 3;
+}
+.newsfeed time + span:before,
+.newsfeed .livefyre-commentcount:before {
+  content: '\002F';
+  padding-left: .3rem;
+  padding-right: .6rem;
+  vertical-align: top;
+}
+.newsfeed .livefyre-commentcount:before {
+  background: transparent url(/media/comment-tout.png) 1.4rem 0 no-repeat;
+  font-weight: 400;
+  padding-right: 2.7rem;
+}
+
+.newsfeed h2 {
+  color: #333;
+  display: inline;
+  font-family: "omnes-pro", Tahoma, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin: 0 .5rem 0 0;
+}
+.newsfeed .thumb h2 {
+  font-size: 1.8rem;
+}
+
+.newsfeed cite,
+.newsfeed cite a {
+  color: #333;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
+  vertical-align: baseline;
+}
+
+.newsfeed p {
+  color: #333;
+  font-family: Georgia, Times, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin: .8rem 0 3rem;
+  max-height: 7rem;
+  overflow: hidden;
+}
+.newsfeed .thumb p {
+  display: inline;
+}
+.newsfeed a.horizontal + p,
+.newsfeed a.large-horizontal + p {
+  margin-top: 0;
+}
+
+.newsfeed p + a {
+  bottom: 4.4rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  left: 18.7rem;
+  line-height: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+.newsfeed .horizontal p + a,
+.newsfeed .large-horizontal p + a {
+  bottom: auto;
+  display: block;
+  height: .5rem;
+  left: 0;
+  margin-top: 2.2rem;
+  position: relative;
+}
+
+.newsfeed button:before {
+  background: #fff;
+  content: '';
+  height: .2rem;
+  left: -.1rem;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -.3rem;
+  width: 102%;
+}
+.newsfeed button {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: .3rem;
+  color: #333;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 4rem;
+  margin: 0 0 3.3rem;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+.newsfeed button:active {
+  color: rgb(248, 93, 0);
+}
+
+.newsfeed .share-feed {
+  bottom: 3.4rem;
+  position: absolute;
+  right: 0;
+}

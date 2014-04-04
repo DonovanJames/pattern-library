@@ -1,0 +1,174 @@
+.newsfeed {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.newsfeed .sponsored,
+.newsfeed time + span,
+.newsfeed .livefyre-commentcount,
+.newsfeed cite,
+.newsfeed cite a,
+.newsfeed p,
+.newsfeed p + a {
+  display: none;
+}
+
+.newsfeed article {
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+  position: relative;
+  width: 100%;
+}
+.newsfeed article:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.newsfeed article.thumb,
+.newsfeed article.square,
+.newsfeed article.horizontal,
+.newsfeed article.large-horizontal {
+  min-height: 10.4rem;
+  padding-top: 1.5rem;
+}
+.newsfeed > article:first-of-type {
+	min-height: 9rem;
+	padding-top: 0;
+}
+.newsfeed div > article:first-child {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.newsfeed a {
+  color: #f85d00;
+  text-decoration: none;
+}
+.newsfeed a.square,
+.newsfeed a.thumb,
+.newsfeed a.horizontal,
+.newsfeed a.large-horizontal {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  height: 6.3rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  position: relative;
+  width: 6.3rem;
+}
+.newsfeed a.horizontal,
+.newsfeed a.large-horizontal {
+  position: absolute;
+  top: 1.5rem;
+}
+
+.newsfeed a.infographic:after,
+.newsfeed a.video:after {
+  background-color: #fa7802;
+  background: rgba(248, 93, 0, .85) url(http://placekitten.com/15) center center no-repeat;
+  border-radius: .3rem;
+  bottom: .5rem;
+  content: '';
+  height: 2.7rem;
+  left: .5rem;
+  padding: 0;
+  position: absolute;
+  width: 2.7rem;
+}
+.newsfeed a.video:after {
+  background-image: url(http://placehold.it/15);
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dppx) {
+  .newsfeed a.infographic:after {
+    background-image: url(http://placekitten.com/30);
+    background-size: 1.5rem;
+  }
+  .newsfeed a.video:after {
+    background-image: url(http://placehold.it/30);
+    background-size: 1.5rem;
+  }
+}
+
+.newsfeed time,
+.newsfeed time + span {
+  color: #555;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+.newsfeed time + span {
+  text-transform: uppercase;
+}
+.newsfeed time + span:after {
+  content: '';
+  display: block;
+}
+
+.newsfeed h2 {
+  color: #333;
+  display: block;
+  font-family: "omnes-pro", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  margin: -.2rem 0 0;
+}
+.newsfeed h2 span {
+  color: #555;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: .1rem 0 0;
+}
+.newsfeed .horizontal time,
+.newsfeed .large-horizontal time,
+.newsfeed .thumb h2,
+.newsfeed .square h2,
+.newsfeed .horizontal h2,
+.newsfeed .large-horizontal h2 {
+  padding-left: 7.3rem;
+}
+
+.newsfeed button:before {
+  background: #fff;
+  content: '';
+  height: .2rem;
+  left: -25%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -.3rem;
+  width: 150%;
+}
+.newsfeed button {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: .3rem;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 4rem;
+  margin: 0 auto 3.3rem;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+.newsfeed button:active {
+  color: rgb(248, 93, 0);
+}
