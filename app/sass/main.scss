@@ -3,22 +3,22 @@
 @import url("800+.css");
 
 @media (min-width: 0px) and (max-width: 599.9px) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
 @media (min-width: 0px) and (max-width: 599.9px) and (-webkit-min-device-pixel-ratio: 2),
 (min-width: 0px) and (max-width: 599.9px) and (min-resolution: 192dppx) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
 @media (min-width: 600px) and (max-width: 799.9px) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
 @media (min-width: 600px) and (max-width: 799.9px) and (-webkit-min-device-pixel-ratio: 2),
 (min-width: 600px) and (max-width: 799.9px) and (min-resolution: 192dppx) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
 @media (min-width: 800px) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
 @media (min-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 800px) and (min-resolution: 192dppx) {
-    .bg-class { background-image: url("img/image.png"); }
+    .bg-class { background-image: url("../img/image.png"); }
 }
