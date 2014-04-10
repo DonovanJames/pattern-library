@@ -5,6 +5,7 @@ Pattern Library
 
 
 **To view Pattern Library on your local machine**
+-------------------------------------------------
 If you have not done so already, install Nodejs then Sass using the gem command.
 
 Once those are installed do these commands in Terminal:
